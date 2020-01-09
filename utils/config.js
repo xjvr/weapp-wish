@@ -13,17 +13,17 @@
 
 //配置域名,域名只修改此处。
 //如果wordpress没有安装在网站根目录请加上目录路径,例如："www.watch-life.net/blog"
-var DOMAIN = "www.watch-life.net";
-var WEBSITENAME="守望轩"; //网站名称
+var DOMAIN = "55io.com";
+var WEBSITENAME="但愿风雨来"; //网站名称
 var PAGECOUNT='10'; //每页文章数目
-var PAYTEMPPLATEID = 'hzKpxuPF2rw7O-qTElkeoE0lMwr0O4t9PJkLyt6v8rk';//鼓励消息模版id
-var REPLAYTEMPPLATEID = 'IiAVoBWP34u1uwt801rI_Crgen7Xl2lvAGP67ofJLo8';//回复评论消息模版id
-var ZANIMAGEURL = 'https://www.watch-life.net/images/2017/07/zsm400.jpg';//微信鼓励的图片链接，用于个人小程序的赞赏
+var PAYTEMPPLATEID = 'pbOL19hJYrMVzUqaaKHt8dxU1u8PZqB9KfUO7G1a7Rg';//鼓励消息模版id
+var REPLAYTEMPPLATEID = 'iOCTemfyfWDZcVx2qWahxitV2zWw7sPm_004QJQjtkU';//回复评论消息模版id
+var ZANIMAGEURL = 'https://55io.com/assets/img/donate.jpg';//微信鼓励的图片链接，用于个人小程序的赞赏
 var LOGO = "../../images/logo-icon.png"; // 网站的logo图片
 //设置downloadFile合法域名,不带https ,在中括号([])里增加域名，格式：{id=**,domain:'www.**.com'}，用英文逗号分隔。
 //此处设置的域名和小程序与小程序后台设置的downloadFile合法域名要一致。
 var DOWNLOADFILEDOMAIN = [
-    { id: 1, domain: 'www.watch-life.net'}
+    { id: 1, domain: '55io.com'}
 
 ];
  //首页图标导航
@@ -45,8 +45,6 @@ var INDEXNAV = [
   { id: '10', name: '关于', image: '../../images/uploads/about.jpg', url: '../about/about', redirecttype: 'apppage', appid: '', extraData: '' }
   
 ];
-
-
 
 export default {
   getDomain: DOMAIN,
