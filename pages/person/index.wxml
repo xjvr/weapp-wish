@@ -1,0 +1,90 @@
+<import src="../../templates/common-list.wxml" />
+<import src="../../templates/copyright.wxml" />
+<import src="../../templates/login-popup.wxml" />
+
+<view class='main-wrapper'>
+  <personTopbar-cmp userId='{{myDetail.id}}' avatar='{{userInfo.avatarUrl}}' nickName="{{userInfo.nickName}}" role="{{userLevel.levelName}}" intro='{{myDetail.desc}}' userType='{{myDetail.user_type}}' folProbCount='{{myDetail.attention_question_num}}' folPersonCount='{{myDetail.attention_user_num}}'
+    folSelfCount='{{myDetail.follow_num}}' />
+  <view class='content-wrapper'>
+    <view class='person-info'>
+      <view class='content-item' catchtap='jumptoMyMessage'>
+        <text>我的浏览</text>
+        <view class='arrow-box'>
+          <view class='tip' wx:if='{{myDetail.message_num > 0}}'>{{myDetail.message_num}}</view>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyQuestion'>
+        <text>我的评论</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyAnswer'>
+        <text>我的点赞</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyAnswer'>
+        <text>我的订阅</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='person-auth'>
+      <view class='content-item' catchtap='jumptoMyAnswer'>
+        <text>关于我们</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='jumptoMyAnswer'>
+        <text>联系客服</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='content-item' catchtap='exit'>
+        <text>退出登录</text>
+        <view class='arrow-box'>
+          <view class='arrow'>
+            <image src='/images/arrow.png'></image>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+
+  
+  <!-- 登录框 -->
+  <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
+
+  <!-- 无法访问网络 -->
+  <view class="showerror" style="display:{{showerror}}">
+    <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
+    <view class="errortext">暂时无法访问网络，请下拉刷新...</view>
+  </view>
+
+  <!-- 版权信息 -->
+  <view class="copyright" style="display:{{(shownodata === 'none') ? 'block' : 'none'}}">
+     <template is="tempCopyright" data="{{webSiteName:webSiteName,domain:domain}}"/>
+  </view>
+
+</view>
+ 

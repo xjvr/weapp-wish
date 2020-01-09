@@ -13,7 +13,8 @@
         "pages/webpage/webpage",
         "pages/comments/comments",
         "pages/poster/poster",
-        "pages/search/search"
+        "pages/search/search",
+        "pages/person/index"
         
     ],
     "window": {
@@ -42,7 +43,7 @@
                 "text": "专题"
             },
             {
-                "pagePath": "pages/readlog/readlog",
+                "pagePath": "pages/person/index",
                 "iconPath": "images/tab-person.png",
                 "selectedIconPath": "images/tab-person-on.png",
                 "text": "我的"

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "personTopbar-cmp": "/templates/person-topbar/index",
+    "wxAuth-cmp": "/templates/wx-auth/index"
+  }
+}

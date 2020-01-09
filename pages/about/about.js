@@ -244,7 +244,7 @@ Page({
                 var _avatarurls = response.data.avatarurls;
                 var avatarurls = [];
                 for (var i = 0; i < _avatarurls.length; i++) {
-                    var avatarurl = "../../images/gravatar.png";
+                  var avatarurl = "../../images/avatar_default.jpg";
                     if (_avatarurls[i].avatarurl.indexOf('wx.qlogo.cn') != -1) {
                         avatarurl = _avatarurls[i].avatarurl;
                     }

@@ -22,7 +22,7 @@ Auth.checkSession=function(appPage,flag)
         let  openid =wx.getStorageSync('openid');
         if(!openid){
            if ('isLoginNow'==flag) {             
-                var userInfo ={avatarUrl:"../../images/gravatar.png",nickName:"登录",isLogin:false}          
+             var userInfo = { avatarUrl:"../../images/avatar_default.jpg",nickName:"登录",isLogin:false}          
                 appPage.setData({isLoginPopup: true,userInfo:userInfo});
             }
             
@@ -67,7 +67,7 @@ Auth.checkAgreeGetUser=function(e,app,appPage,authFlag)
                 }
                 else
                 {
-                    var userInfo ={avatarUrl:"../../images/gravatar.png",nickName:"点击登录",isLogin:false}
+                  var userInfo = { avatarUrl:"../../images/avatar_default.jpg",nickName:"点击登录",isLogin:false}
                     appPage.setData({userInfo:userInfo});
                     console.log("用户拒绝了授权");
                 }

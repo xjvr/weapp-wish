@@ -133,7 +133,7 @@ Page({
     }
     var likes = [];
     for (var i = 0; i < _likes.length; i++) {
-      var avatarurl = "../../images/gravatar.png";
+      var avatarurl = "../../images/avatar_default.jpg";
       if (_likes[i].avatarurl.indexOf('wx.qlogo.cn') != -1) {
         avatarurl = _likes[i].avatarurl;
       }
