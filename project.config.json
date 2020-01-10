@@ -22,7 +22,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.10.0",
 	"appid": "wx2e920b3451396be5",
 	"projectname": "但愿风雨来",
 	"simulatorType": "wechat",

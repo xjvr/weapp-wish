@@ -51,12 +51,14 @@
         </view>
       </view>
       <view class='content-item' catchtap='jumptoMyAnswer'>
-        <text>联系客服</text>
-        <view class='arrow-box'>
-          <view class='arrow'>
-            <image src='/images/arrow.png'></image>
+        <button class="cu-btn content" open-type="contact">
+          <text>联系客服</text>
+          <view class='arrow-box'>
+            <view class='arrow'>
+              <image src='/images/arrow.png'></image>
+            </view>
           </view>
-        </view>
+        </button>
       </view>
       <view class='content-item' catchtap='exit'>
         <text>退出登录</text>
