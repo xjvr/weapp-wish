@@ -1036,7 +1036,8 @@ Page({
   creatArticlePoster: function (appPage, api, util, modalView, poster) {
     var postId = appPage.data.detail.id;
     var title = appPage.data.detail.title.rendered;
-    var excerpt = appPage.data.detail.excerpt.rendered ? appPage.data.detail.excerpt.rendered : '';
+    // var excerpt = appPage.data.detail.excerpt.rendered ? appPage.data.detail.excerpt.rendered : '';
+    var excerpt = appPage.data.detail.post_excerpt.rendered ? appPage.data.detail.post_excerpt.rendered : '';
     if (excerpt && excerpt.length != 0 && excerpt != '') {
       excerpt = util.removeHTML(excerpt);
     }
