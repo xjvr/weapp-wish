@@ -12,9 +12,12 @@
 
 <template name="tempHeader">
   <view class="header">
-    <image src="../../images/logo.png" style="height:200rpx;width:400rpx"></image>
-    <view style='margin-top:40rpx'>
-      守望生活, 审视自我,宁静雅致的小轩馆.
+    <image src="/images/cover.jpg" style="height:360rpx;width:640rpx"></image>
+    <view style='margin-top:30rpx'>
+      隐约雷鸣 阴霾天空 
+    </view>
+    <view style='margin-top:20rpx'>
+      但愿风雨来 能留你在此
     </view>
   </view>
 </template>
