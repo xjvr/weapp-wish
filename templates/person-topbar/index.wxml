@@ -1,4 +1,44 @@
-<view class='top-wrapper'>
+<image src="/images/bg.png" class="top-bg"></image>
+
+<view class="cu-card case">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar user-info">
+      <view class="cu-item ">
+        <view class="cu-avatar round lg" style="background-image:url({{avatar}});"></view>
+        <view class="content flex-sub">
+          <view>{{nickName}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{role}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list grid col-4 no-border">
+      <view class="cu-item">
+        <view class="cuIcon-attentionfill text-orange">
+        </view>
+        <text class="cu-text">浏览</text>
+      </view>
+      <view class="cu-item">
+        <view class="cuIcon-commentfill text-cyan">
+        </view>
+        <text class="cu-text">评论</text>
+      </view>
+      <view class="cu-item">
+        <view class="cuIcon-likefill text-red">
+        </view>
+        <text class="cu-text">点赞</text>
+      </view>
+      <view class="cu-item">
+        <view class="cuIcon-discoverfill text-purple">
+        </view>
+        <text class="cu-text">订阅</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class='top-wrapper'>
   <view class='top-container'>
     <view class='person-container'>
       <view class='avatar'>
@@ -30,6 +70,7 @@
       <text wx:else>{{attentionStatus == 1 ? '已关注' : '互相关注'}}</text>
     </view>
   </view>
+
   <view class='follow-container'>
     <view class='follow-item' catchtap='_jumptoFollowProblem'>
       <text>{{folProbCount}}</text>
@@ -47,4 +88,4 @@
       <text wx:else>关注{{sex == "2" ? '她' : '他'}}的人</text>
     </view>
   </view>
-</view>
+</view> -->
