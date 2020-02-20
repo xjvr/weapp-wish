@@ -37,12 +37,12 @@ var INDEXNAV = [
   { id: '1', name: '排行', image: '../../images/uploads/ranking.jpg', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '2', name: '搜索', image: '../../images/uploads/search.jpg', url: '../search/search', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '4', name: '技术支持', image: '../../images/uploads/minapper-bi.png', url: 'pages/social/social', redirecttype: 'miniapp', appid: 'wxc1771b619b83316b', extraData: '' },
-  { id: '5', name: '排行', image: '../../images/uploads/ranking.jpg', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData: '' },
+  { id: '5', name: '评论', image: '../../images/uploads/comment.png', url: '../comments/comments', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '6', name: '搜索', image: '../../images/uploads/search.jpg', url: '../search/search', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '7', name: '小程序', image: '../../images/uploads/miniprogram.png', url: '../list/list?categoryID=1059', redirecttype: 'apppage', appid: '', extraData: '' },
   { id: '8', name: '官网', image: '../../images/uploads/watch-life.png', url: 'https://55io.com', redirecttype: 'webpage', appid: '', extraData: '' },
-  { id: '9', name: '言论', image: '../../images/uploads/comment.png', url: '../comments/comments', redirecttype: 'apppage', appid: '', extraData: '' },
-  { id: '10', name: '关于', image: '../../images/uploads/about.jpg', url: '../about/about', redirecttype: 'apppage', appid: '', extraData: '' }
+
+  { id: '9', name: '关于', image: '../../images/uploads/about.jpg', url: '../about/about', redirecttype: 'apppage', appid: '', extraData: '' }
   
 ];
 
