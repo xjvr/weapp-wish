@@ -75,12 +75,32 @@ view {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0.34em;
+  color: #313131;
+}
+
+.wxParse-h2:before {
+  content: '#';
+  color: #39f;
+  margin-right: 5px;
 }
 
 .wxParse-h3 {
   font-weight: 400;
   font-size: 15px;
   margin-bottom: 0.34em;
+  position: relative;
+  margin: 20px 0;
+}
+
+.wxParse-h3:before {
+  content: '';
+  border-radius: 100%;
+  border: 2px solid #777;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 0 8px 1px 0;
+  background-color: #4acc40;
 }
 
 .wxParse-h4 {
@@ -101,16 +121,47 @@ view {
   margin-bottom: 0.04em;
 }
 
-.wxParse-h1, .wxParse-h2, .wxParse-h3, .wxParse-h4, .wxParse-h5, .wxParse-h6,
-.wxParse-b, .wxParse-strong {
+.wxParse-h1,
+.wxParse-h2,
+.wxParse-h3,
+.wxParse-h4,
+.wxParse-h5,
+.wxParse-h6,
+.wxParse-b,
+.wxParse-strong {
   font-weight: bolder;
 }
 
-.wxParse-i, .wxParse-cite, .wxParse-em, .wxParse-var, .wxParse-address {
+.wxParse-p {
+  color: #666;
+  font-size: 15px;
+  display: block;
+  line-height: 1.6;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+.wxParse-i,
+.wxParse-cite,
+.wxParse-em,
+.wxParse-var,
+.wxParse-address {
   font-style: italic;
 }
 
-.wxParse-pre, .wxParse-tt, .wxParse-code, .wxParse-kbd, .wxParse-samp {
+.wxParse-pre,
+.wxParse-tt,
+.wxParse-code,
+.wxParse-kbd,
+.wxParse-samp {
   font-family: monospace;
 }
 
@@ -122,7 +173,9 @@ view {
   font-size: 1.17em;
 }
 
-.wxParse-small, .wxParse-sub, .wxParse-sup {
+.wxParse-small,
+.wxParse-sub,
+.wxParse-sup {
   font-size: 0.83em;
 }
 
@@ -134,7 +187,9 @@ view {
   vertical-align: super;
 }
 
-.wxParse-s, .wxParse-strike, .wxParse-del {
+.wxParse-s,
+.wxParse-strike,
+.wxParse-del {
   text-decoration: line-through;
 }
 
@@ -142,7 +197,8 @@ view {
 
 /*增加video的css样式*/
 
-.wxParse-strong, .wxParse-s {
+.wxParse-strong,
+.wxParse-s {
   display: inline;
 }
 
@@ -168,31 +224,51 @@ view {
 .wxParse-blockquote {
   margin: 0;
   padding: 10px 0 10px 5px;
-  font-family: Courier, Calibri, "宋体";
+  font-family: Courier, Calibri, '宋体';
   background: #f5f5f5;
   border-left: 3px solid #dbdbdb;
 }
 
-.wxParse-code, .wxParse-wxxxcode-style {
+.wxParse-code,
+.wxParse-wxxxcode-style {
   display: inline;
   background: #f5f5f5;
 }
 
 .wxParse-ul {
-  margin: 20rpx 10rpx;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40rpx;
 }
 
-.wxParse-li, .wxParse-li-inner {
-  display: flex;
-  align-items: baseline;
-  margin: 10rpx 0;
+.wxParse-li {
+  position: relative;
+  padding: 0;
+  margin: 10rpx, 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
-.wxParse-li-text {
-  align-items: center;
-  line-height: 20px;
-}
+/* .wxParse-li:before {
+    content: '';
+    left: -10px;
+    border-radius: 100%;
+    border: 1px solid #777;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #4acc40;
+} */
 
+/* .wxParse-li-text{
+    align-items: center;
+    line-height: 20px;
+} */
+
+/*
 .wxParse-li-circle {
   display: inline-flex;
   width: 5px;
@@ -218,6 +294,7 @@ view {
   background-color: #fff;
   margin-right: 5px;
 }
+*/
 
 /*.wxParse-table{
     width: 100%;
@@ -258,7 +335,8 @@ view {
   border-top: 1px solid #e0e0e0;
 }
 
-.wxParse-th, .wxParse-td {
+.wxParse-th,
+.wxParse-td {
   flex: 1;
   padding: 5px;
   font-size: 28rpx;
@@ -285,7 +363,8 @@ view {
 
 /*-- 208至215行加入pre code支持 */
 
-.wxParser-pre, .wxParser-code {
+.wxParser-pre,
+.wxParser-code {
   margin: 5rpx 0;
   padding: 5rpx 6rpx;
   border-radius: 8rpx;
