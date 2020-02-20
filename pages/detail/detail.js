@@ -415,7 +415,7 @@ Page({
           detail: response.data,
           likeCount: _likeCount,
           postID: id,
-          link: response.data.link,
+          link: response.data.post_link,
           detailDate: util.cutstr(response.data.date, 10, 1),
           display: 'block',
           displayLike: _displayLike,
