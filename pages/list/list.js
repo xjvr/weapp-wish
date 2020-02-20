@@ -137,7 +137,7 @@ Page({
   onLoad: function (options) {
     var self = this;
     // 设置插屏广告
-    this.setInterstitialAd();
+    // this.setInterstitialAd();
     if (options.categoryID && options.categoryID != 0) {
       self.setData({
         categories: options.categoryID,
