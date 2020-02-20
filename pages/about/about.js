@@ -225,7 +225,10 @@ Page({
               // success
             }
           });
-        WxParse.wxParse('article', 'html', response.data.post_content, self, 5);
+        var content = response.data.post_content.replace(/<\/h2><br[ ]{0,1}\/>/g, "<\/h2>");
+        console.log(content)
+        WxParse.wxParse('article', 'html', content, self, 5);
+        // WxParse.wxParse('article', 'html', response.data.post_content, self, 5);
 
         self.setData({
             pageData: response.data,
