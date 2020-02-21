@@ -53,7 +53,7 @@
     <!-- 精选栏目 -->
     <view class="selected-nav" wx:if="{{topNav.length != 0}}">
       <view class='common-subtitle'>
-        <view class='common-subtitle-left'>精选</view>
+        <view class='common-subtitle-left'>精选栏目</view>
         <view class='common-subtitle-right'>滑动查看</view>
       </view>
       <!-- 栏目列表 -->
@@ -85,8 +85,8 @@
         </view>
       </scroll-view>
     </view>
-
-
+    
+    <official-account></official-account>
 
     <!-- 搜索 -->
     <!-- <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
