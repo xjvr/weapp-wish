@@ -5,6 +5,35 @@ page {
   background: #f1f6f9;
 }
 
+.top-bg{
+  position:fixed;top:0;width: 750rpx;height: 260rpx;z-index:-1
+}
+
+.user-info{
+  padding: 10rpx 30rpx 0;
+}
+
+.cu-avatar.lg {
+	width: 112rpx !important;
+	height: 112rpx;
+	font-size: 2em;
+}
+.flex-sub{
+  padding-left:20rpx;
+}
+
+.cu-text{
+  margin-top: 10rpx;
+	font-size: 22rpx !important;
+	line-height: 30rpx !important;
+}
+
+.top-wrapper {
+  height: 240rpx;
+  padding: 30rpx;
+}
+
+
 .cu-list {
   margin-top: 0rpx;
 }

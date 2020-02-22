@@ -1,5 +1,4 @@
-@import "/vendor/colorui/main.wxss";
-@import "/vendor/colorui/icon.wxss";
+
 .top-bg{
   position:fixed;top:0;width: 750rpx;height: 260rpx;z-index:-1
 }
@@ -9,12 +8,12 @@
 }
 
 .cu-avatar.lg {
-	width: 102rpx;
-	height: 102rpx;
+	width: 112rpx !important;
+	height: 112rpx;
 	font-size: 2em;
 }
 .flex-sub{
-  padding-left:10rpx;
+  padding-left:20rpx;
 }
 
 .cu-text{

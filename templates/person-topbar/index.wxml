@@ -1,36 +1,36 @@
 <image src="/images/bg.png" class="top-bg"></image>
 
-<view class="cu-card case">
+<view class="cu-card case radius">
   <view class="cu-item shadow">
     <view class="cu-list menu-avatar user-info">
-      <view class="cu-item ">
+      <view class="cu-item" bindtap="login">
         <view class="cu-avatar round lg" style="background-image:url({{avatar}});"></view>
         <view class="content flex-sub">
           <view>{{nickName}}</view>
-          <view class="text-gray text-sm flex justify-between">
-            {{role}}
+          <view  wx:if="{{userInfo.role !='' && userInfo.role != null}}" class="text-gray text-sm flex justify-between">
+            角色|{{role}}
           </view>
         </view>
       </view>
     </view>
-    <view class="cu-list grid col-4 no-border">
+    <view class="cu-list grid col-4 no-border" style="padding:10rpx">
       <view class="cu-item">
-        <view class="cuIcon-attentionfill text-orange">
+        <view class="cuIcon-read text-orange">
         </view>
         <text class="cu-text">浏览</text>
       </view>
       <view class="cu-item">
-        <view class="cuIcon-commentfill text-cyan">
+        <view class="cuIcon-mark text-cyan">
         </view>
         <text class="cu-text">评论</text>
       </view>
       <view class="cu-item">
-        <view class="cuIcon-likefill text-red">
+        <view class="cuIcon-like text-red">
         </view>
         <text class="cu-text">点赞</text>
       </view>
       <view class="cu-item">
-        <view class="cuIcon-discoverfill text-purple">
+        <view class="cuIcon-newshot text-purple">
         </view>
         <text class="cu-text">订阅</text>
       </view>

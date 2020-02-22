@@ -23,7 +23,8 @@ Page({
     openid: '',
     isLoginPopup: false,
     webSiteName: webSiteName,
-    domain: domain 
+    domain: domain,
+ 
   },
 
   /**
@@ -33,7 +34,6 @@ Page({
     var self = this;
     Auth.setUserInfoData(self);
     Auth.checkLogin(self);
-    console.log(self.userInfo)
   },
 
   /**
@@ -48,8 +48,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(this.userInfo)
-
+    console.log(this.data.userInfo)
   },
 
   /**
@@ -149,9 +148,20 @@ Page({
     }
 
   },
-
+  praise: function () {
+    var src = config.getZanImageUrl;
+    console.log(src)
+    wx.previewImage({
+      urls: [src],
+    });
+  },
+  login() {
+    let { userId, nickName } = this.data
+    if (!userId) {
+      this.openLoginPopup()
+    }
+  },
   exit: function (e) {
-
     Auth.logout(this);
     wx.reLaunch({
       url: '../index/index'
@@ -175,6 +185,6 @@ Page({
       'dialog.title': '',
       'dialog.content': ''
     })
-  } 
+  },
 
 })

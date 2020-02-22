@@ -120,4 +120,5 @@ Component({
       app.qx.navigateTo({ url: app.page.person_edit })
     }
   }
+
 })
