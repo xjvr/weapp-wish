@@ -699,6 +699,7 @@ Page({
               commentsList: [].concat(self.data.commentsList, response.data.data)
             });
           }
+          console.log(this.data.commentsList)
         }
       })
       .catch(response => {

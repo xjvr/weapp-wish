@@ -221,7 +221,7 @@
 .comment-gravatar {
   width: 70rpx;
   height: 70rpx;
-  border-radius: 6rpx;
+  border-radius: 50%;
   display: block;
 }
 
