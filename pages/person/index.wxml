@@ -10,12 +10,12 @@
     <view class="cu-item shadow">
       <view class="cu-list menu-avatar user-info">
         <!-- 登录状态 -->
-        <view class="cu-item" bindtap="login" wx:if="{{openid !=''}}">
+        <view class="cu-item" wx:if="{{openid !=''}}">
           <view class="cu-avatar round lg" style="background-image:url({{userInfo.avatarUrl}});"></view>
           <view class="content flex-sub">
             <view>{{userInfo.nickName}}</view>
             <view class="text-gray text-sm flex justify-between">
-              角色|{{userLevel.levelName}}
+              角色 | {{userLevel.levelName}}
             </view>
           </view>
         </view>
