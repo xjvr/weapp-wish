@@ -31,22 +31,22 @@
         </view>
       </view>
       <view class="cu-list grid col-4 no-border" style="padding:10rpx">
-        <view class="cu-item">
+        <view class="cu-item" id="1" catchtap="readlog">
           <view class="cuIcon-read text-orange">
           </view>
           <text class="cu-text">浏览</text>
         </view>
-        <view class="cu-item">
+        <view class="cu-item" id="2" catchtap="readlog">
           <view class="cuIcon-mark text-blue">
           </view>
           <text class="cu-text">评论</text>
         </view>
-        <view class="cu-item">
+        <view class="cu-item" id="3" catchtap="readlog">
           <view class="cuIcon-like text-red">
           </view>
           <text class="cu-text">点赞</text>
         </view>
-        <view class="cu-item">
+        <view class="cu-item" id="5" catchtap="readlog">
           <view class="cuIcon-newshot text-cyan">
           </view>
           <text class="cu-text">订阅</text>
