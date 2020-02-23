@@ -1,13 +1,3 @@
-/*
- * 
- * 微慕小程序
- * author: jianbo
- * organization:  微慕 www.minapper.com 
- * 技术支持微信号：Jianbo
- * Copyright (c) 2018 https://www.minapper.com All rights reserved.
- */
-
-
 var Api = require('../../utils/api.js');
 var util = require('../../utils/util.js');
 var WxParse = require('../../wxParse/wxParse.js');
