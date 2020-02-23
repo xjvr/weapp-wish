@@ -58,18 +58,25 @@ Page({
         var getNewComments = wxRequest.getRequest(Api.getNewComments());
         getNewComments.then(response => {
             if (response.statusCode == 200) {
+              console.log(response)
                 this.setData({
                     readLogs: self.data.readLogs.concat(response.data.map(function (item) {
                         item[0] = item.post;
-                        item[1] = util.removeHTML(item.content.rendered + '(' + item.author_name + ')');
+                        item[1] = util.removeHTML(item.content.rendered);
                         item[2] = "0";
+                        item[3] = util.cutstr(item.date, 10, 1);
+                        if ((item.author_url.indexOf('wx.qlogo.cn') != -1)){
+                          item[4] = item.author_url;
+                        } else{
+                          item[4] = item.author_avatar_urls[24];
+                        }
                         return item;
                     }))
                 });
                 self.setData({
                     showallDisplay: "block"
                 });
-                
+                console.log(this.data.readLogs)
             }
             else {
                 console.log(response);
