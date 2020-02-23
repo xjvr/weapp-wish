@@ -83,8 +83,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    var title = "分享我在“" + config.getWebsiteName + "浏览、评论、点赞、鼓励的文章";
-    var path = "pages/readlog/readlog";
+    var title = "分享" + config.getWebsiteName + "小程序";
+    var path = "pages/person/index";
     return {
       title: title,
       path: path,
@@ -184,6 +184,13 @@ Page({
       'dialog.hidden': true,
       'dialog.title': '',
       'dialog.content': ''
+    })
+  },
+  readlog: function (e) {
+    var cate = e.currentTarget.id;
+    var url = '../readlog/readlog?cate=' + cate;
+    wx.navigateTo({
+      url: url
     })
   },
 
