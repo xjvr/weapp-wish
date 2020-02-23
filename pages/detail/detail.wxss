@@ -347,8 +347,8 @@
 /* tab栏更多图标 */
 
 .comment_icon_more {
-  width: 36rpx;
-  height: 36rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .replay-button {
